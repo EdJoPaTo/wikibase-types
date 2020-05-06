@@ -1,0 +1,44 @@
+{
+	"name": "wikibase-types",
+	"version": "0.0.0",
+	"description": "Types the Wikibase / Wikidata API returns",
+	"keywords": [
+		"wikidata",
+		"wikibase",
+		"wikibase-sdk",
+		"wikidata-sdk"
+	],
+	"license": "MIT",
+	"repository": "EdJoPaTo/wikibase-types",
+	"author": {
+		"name": "EdJoPaTo",
+		"email": "wikibase-npm-package@edjopato.de",
+		"url": "https://edjopato.de"
+	},
+	"scripts": {
+		"build": "del-cli dist && tsc",
+		"prepack": "npm run build",
+		"test": "tsc --sourceMap && xo"
+	},
+	"engines": {
+		"node": ">=10"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@sindresorhus/tsconfig": "^0.7.0",
+		"del-cli": "^3.0.0",
+		"typescript": "^3.7.4",
+		"xo": "^0.30.0"
+	},
+	"files": [
+		"dist/*.d.ts",
+		"!*.test.*"
+	],
+	"types": "dist",
+	"xo": {
+		"semicolon": false,
+		"rules": {
+			"ava/no-ignored-test-files": "off"
+		}
+	}
+}
