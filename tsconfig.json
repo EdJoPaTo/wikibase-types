@@ -4,6 +4,7 @@
 		"source"
 	],
 	"compilerOptions": {
+		"module": "CommonJS",
 		"outDir": "dist"
 	}
 }
