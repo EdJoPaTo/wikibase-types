@@ -18,7 +18,7 @@ export interface ClaimSnak {
 	readonly snaktype: string;
 }
 
-export type ClaimSnakValue = ClaimSnakTimeValue | ClaimSnakEntityValue
+export type ClaimSnakValue = ClaimSnakTimeValue | ClaimSnakEntityValue | ClaimSnakQuantityValue
 
 export interface ClaimSnakTimeValue {
 	readonly type: 'time';
@@ -29,6 +29,14 @@ export interface ClaimSnakTimeValue {
 		readonly precision: number;
 		readonly time: string;
 		readonly timezone: number;
+	};
+}
+
+export interface ClaimSnakQuantityValue {
+	readonly type: 'quantity';
+	readonly value: {
+		readonly amount: string;
+		readonly unit: number;
 	};
 }
 
