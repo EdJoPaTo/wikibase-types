@@ -18,7 +18,13 @@ export interface ClaimSnak {
 	readonly snaktype: string;
 }
 
-export type ClaimSnakValue = ClaimSnakTimeValue | ClaimSnakEntityValue | ClaimSnakQuantityValue
+export type ClaimSnakValue = ClaimSnakStringValue | ClaimSnakTimeValue | ClaimSnakEntityValue | ClaimSnakQuantityValue
+
+
+export interface ClaimSnakStringValue {
+	readonly type: 'string';
+	readonly value: string;
+}
 
 export interface ClaimSnakTimeValue {
 	readonly type: 'time';
