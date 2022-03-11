@@ -42,7 +42,7 @@ export interface ClaimSnakQuantityValue {
 	readonly type: 'quantity';
 	readonly value: {
 		readonly amount: string;
-		readonly unit: number;
+		readonly unit: string;
 	};
 }
 
