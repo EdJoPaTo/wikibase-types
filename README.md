@@ -2,18 +2,14 @@
 
 [![NPM Version](https://img.shields.io/npm/v/wikibase-types.svg)](https://www.npmjs.com/package/wikibase-types)
 [![node](https://img.shields.io/node/v/wikibase-types.svg)](https://www.npmjs.com/package/wikibase-types)
-[![Dependency Status](https://david-dm.org/EdJoPaTo/wikibase-types/status.svg)](https://david-dm.org/EdJoPaTo/wikibase-types)
-[![Dev Dependency Status](https://david-dm.org/EdJoPaTo/wikibase-types/dev-status.svg)](https://david-dm.org/EdJoPaTo/wikibase-types?type=dev)
 
 > Types the Wikibase / Wikidata API returns
 
-
 ## Install
 
+```bash
+npm install wikibase-types
 ```
-$ npm install wikibase-types
-```
-
 
 ## Usage
 
