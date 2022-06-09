@@ -22,7 +22,7 @@
 	},
 	"type": "commonjs",
 	"engines": {
-		"node": ">=12"
+		"node": ">=14"
 	},
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^3.0.0",
@@ -40,7 +40,10 @@
 		"semicolon": false,
 		"rules": {
 			"@typescript-eslint/prefer-readonly-parameter-types": "error",
-			"import/extensions": ["error", "never"]
+			"import/extensions": [
+				"error",
+				"never"
+			]
 		}
 	}
 }
