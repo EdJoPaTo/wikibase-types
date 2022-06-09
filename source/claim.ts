@@ -24,7 +24,6 @@ export type ClaimSnakValue =
        ClaimSnakStringValue |
        ClaimSnakTimeValue
 
-
 export interface ClaimSnakStringValue {
 	readonly type: 'string';
 	readonly value: string;
