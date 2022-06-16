@@ -20,6 +20,7 @@ export interface ClaimSnak {
 
 export type ClaimSnakValue =
        ClaimSnakEntityValue |
+       ClaimSnakMonolingualTextValue |
        ClaimSnakQuantityValue |
        ClaimSnakStringValue |
        ClaimSnakTimeValue
@@ -55,6 +56,14 @@ export interface ClaimSnakEntityValue {
 		readonly id: string;
 		readonly 'numeric-id': number;
 		readonly 'entity-type': string;
+	};
+}
+
+export interface ClaimSnakMonolingualTextValue {
+	readonly type: 'monolingualtext';
+	readonly value: {
+		readonly text: string;
+		readonly language: string;
 	};
 }
 
