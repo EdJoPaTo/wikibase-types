@@ -1,6 +1,6 @@
 {
 	"name": "wikibase-types",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "Types the Wikibase / Wikidata API returns",
 	"keywords": [
 		"wikidata",
