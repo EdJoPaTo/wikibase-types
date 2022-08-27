@@ -1,11 +1,11 @@
-import {Claim} from './claim'
+import type {Claim} from './claim.js'
 
-export interface LanguageEntry {
+export type LanguageEntry = {
 	readonly language: string;
 	readonly value: string;
 }
 
-export interface Entity {
+export type Entity = {
 	readonly type: string;
 	readonly datatype?: string;
 	readonly id: string;
@@ -29,7 +29,7 @@ export interface Entity {
 	readonly sitelinks?: Record<string, Sitelink>;
 }
 
-export interface Sitelink {
+export type Sitelink = {
 	readonly site: string;
 	readonly title: string;
 	readonly badges: readonly string[];

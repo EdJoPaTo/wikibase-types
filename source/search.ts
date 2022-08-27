@@ -1,4 +1,4 @@
-export interface SearchResult {
+export type SearchResult = {
 	readonly aliases?: readonly string[];
 	readonly concepturi: string;
 	readonly description?: string;

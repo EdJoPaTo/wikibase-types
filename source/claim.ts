@@ -1,6 +1,6 @@
 export type ClaimRank = 'normal' | 'preferred' | 'deprecated'
 
-export interface Claim {
+export type Claim = {
 	readonly id: string;
 	readonly mainsnak: ClaimSnak;
 	readonly rank: ClaimRank;
@@ -10,7 +10,7 @@ export interface Claim {
 	readonly references?: readonly ClaimReference[];
 }
 
-export interface ClaimSnak {
+export type ClaimSnak = {
 	readonly datatype: string;
 	readonly datavalue?: ClaimSnakValue;
 	readonly hash: string;
@@ -25,12 +25,12 @@ export type ClaimSnakValue =
        ClaimSnakStringValue |
        ClaimSnakTimeValue
 
-export interface ClaimSnakStringValue {
+export type ClaimSnakStringValue = {
 	readonly type: 'string';
 	readonly value: string;
 }
 
-export interface ClaimSnakTimeValue {
+export type ClaimSnakTimeValue = {
 	readonly type: 'time';
 	readonly value: {
 		readonly after: number;
@@ -42,7 +42,7 @@ export interface ClaimSnakTimeValue {
 	};
 }
 
-export interface ClaimSnakQuantityValue {
+export type ClaimSnakQuantityValue = {
 	readonly type: 'quantity';
 	readonly value: {
 		readonly amount: string;
@@ -50,7 +50,7 @@ export interface ClaimSnakQuantityValue {
 	};
 }
 
-export interface ClaimSnakEntityValue {
+export type ClaimSnakEntityValue = {
 	readonly type: 'wikibase-entityid';
 	readonly value: {
 		readonly id: string;
@@ -59,7 +59,7 @@ export interface ClaimSnakEntityValue {
 	};
 }
 
-export interface ClaimSnakMonolingualTextValue {
+export type ClaimSnakMonolingualTextValue = {
 	readonly type: 'monolingualtext';
 	readonly value: {
 		readonly text: string;
@@ -67,7 +67,7 @@ export interface ClaimSnakMonolingualTextValue {
 	};
 }
 
-export interface ClaimReference {
+export type ClaimReference = {
 	readonly hash: string;
 	readonly snaks: Record<string, readonly ClaimSnak[]>;
 	readonly 'snaks-order': readonly string[];
