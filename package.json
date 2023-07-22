@@ -28,7 +28,7 @@
 		"@sindresorhus/tsconfig": "^3.0.0",
 		"del-cli": "^5.0.0",
 		"typescript": "^5.0.2",
-		"xo": "^0.54.0"
+		"xo": "^0.55.0"
 	},
 	"files": [
 		"dist",
