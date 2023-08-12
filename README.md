@@ -5,6 +5,8 @@
 
 > Types the Wikibase / Wikidata API returns
 
+Consider using [wikibase-sdk](https://www.npmjs.com/package/wikibase-sdk) as it is implemented in Typescript now and includes these types.
+
 ## Install
 
 ```bash
@@ -13,4 +15,4 @@ npm install wikibase-types
 
 ## Usage
 
-Please have a look at the [source folder](source)
+Please take a look at the [source folder](source)
