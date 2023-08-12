@@ -9,7 +9,10 @@
 		"wikidata-sdk"
 	],
 	"license": "MIT",
-	"repository": "EdJoPaTo/wikibase-types",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/EdJoPaTo/wikibase-types.git"
+	},
 	"author": {
 		"name": "EdJoPaTo",
 		"email": "wikibase-npm-package@edjopato.de",
